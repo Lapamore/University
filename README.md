@@ -1,4 +1,4 @@
-#University Repository
+#University Repository#
 This repository contains the code for laboratory work in C#, Olympiad problems, and various Python algorithms completed during my time at university.
 ___
 ##C#
