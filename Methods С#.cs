@@ -3,10 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 class Program {
-	//https://replit.com/join/hjxuhvgqhk-test4me1
-  // Я очередь - Дима
-  // а что есть на выбор?
-	//hashSet. 
   static void Main(){
         Console.Clear();
         int i = 0;
