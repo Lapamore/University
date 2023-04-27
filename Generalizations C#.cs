@@ -2,20 +2,38 @@ using System;
 
 class Program {
   public static void Main (string[] args) {
-    Mylist<int> mylist = new Mylist<int>();
+    Mylist<int> mylist_int = new Mylist<int>();
+    Mylist<string> mylist_string = new Mylist<string>();
     
-    mylist.Add(1);
-    mylist.Add(2);
-    mylist.Add(3);
-    mylist.Add(4);
-    mylist.Add(5);
+    mylist_int.Add(1);
+    mylist_int.Add(2);
+    mylist_int.Add(3);
+    mylist_int.Add(4);
+    mylist_int.Add(5);
+
+    mylist_string.Add("MO-221");
+    mylist_string.Add("FIT-221");
+    mylist_string.Add("FIT-222");
+    mylist_string.Add("TMO-202");
+    mylist_string.Add("ИВT-202");
+
     
-    mylist.Del(5);
-    Console.WriteLine(mylist[1]);
+    mylist_int.Del(5);
+    Console.WriteLine(mylist_int[1]);
     
-    for (int i = 0; i < mylist.Count; i++){
-      Console.WriteLine(mylist[i]);
+    for (int i = 0; i < mylist_int.Count; i++){
+      Console.Write($"{mylist_int[i]}, ");
     }
+    
+    Console.WriteLine();
+
+    mylist_string.Del("MO-221");
+    Console.WriteLine(mylist_string[1]);
+    
+    for (int i = 0; i < mylist_string.Count; i++){
+      Console.Write($"{mylist_string[i]}, ");
+    }
+    
   }
 public class Mylist<T>
   {
