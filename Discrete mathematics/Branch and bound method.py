@@ -4,7 +4,7 @@ def minC(T, col):
 	return min([i[col] for i in T])
 
 def compose(tuples):
-	while True: # Пример: [(2, 5), (5, 1), (3, 2)] -> [(3, 2, 5, 1)]
+	while True: 
 		breaker = False
 		for i in range(len(tuples)):
 			for j in range(len(tuples)):
@@ -34,7 +34,7 @@ def brancher(A):
 			a = minC(A, i)
 			way += a
 			for j in range(len(A)):
-				A[j][i] -= a # decreases columns
+				A[j][i] -= a 
 		#way = 73
 		list_of_zeroes = []
 		for i in range(len(A)):
