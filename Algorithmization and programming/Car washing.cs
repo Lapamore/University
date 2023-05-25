@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 
 class Program {
-  
   public static void Main (string[] args) {
     Car car_1 = new Car("Lada","Vesta","Black");
     Car car_2 = new Car("Mitsubishi","Lancer X","White");
