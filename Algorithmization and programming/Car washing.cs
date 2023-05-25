@@ -21,10 +21,7 @@ class Program {
     garage.addCar(car_5);
     garage.addCar(car_6);
     
-    
-
-    wash.WashAllCars(garage);
-    
+    wash.WashAllCars(garage);    
   }
   
 public class Car{
