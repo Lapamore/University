@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 import telebot
-import Config
+import os
 
 def main():
 
-    bot = telebot.TeleBot(token = Config.TOKEN)
+    bot = telebot.TeleBot(token = YOUR TOKEN)
 
     @bot.message_handler(commands = ["start"])
     def main(message):
