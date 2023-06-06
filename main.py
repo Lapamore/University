@@ -2,10 +2,12 @@
 
 import telebot
 import os
+from dotenv import load_dotenv
+load_dotenv()
 
 def main():
-
-    bot = telebot.TeleBot(token = YOUR TOKEN)
+    token = os.getenv('TOKEN')
+    bot = telebot.TeleBot(token = token)
 
     @bot.message_handler(commands = ["start"])
     def main(message):
